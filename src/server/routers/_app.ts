@@ -1,6 +1,7 @@
 import { createRouter } from '../createRouter';
 import superjson from 'superjson';
 import { characterRouter } from './character';
+import { optionsRouter } from './options';
 
 export const appRouter = createRouter()
   .transformer(superjson)
@@ -9,6 +10,7 @@ export const appRouter = createRouter()
       return 'yay!';
     },
   })
-  .merge('characters.', characterRouter);
+  .merge('characters.', characterRouter)
+  .merge('options.', optionsRouter);
 
 export type AppRouter = typeof appRouter;

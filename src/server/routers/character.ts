@@ -1,10 +1,8 @@
-// https://swapi.dev/api/
-
 import { Prisma } from '@prisma/client';
 import { prisma } from '~/server/prisma';
 import { createRouter } from '../createRouter';
 import { z } from 'zod';
-import { TRPCError } from '@trpc/server/dist/declarations/src/TRPCError';
+import { TRPCError } from '@trpc/server';
 
 const defaultCharacterSelect = Prisma.validator<Prisma.CharacterSelect>()({
   charId: true,
