@@ -8,8 +8,7 @@ export const DefaultLayout = ({ children }: DefaultLayoutProps) => {
   return (
     <>
       <Head>
-        <title>Prisma Starter</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Forciest Star Wars Character</title>
       </Head>
 
       <main>{children}</main>
