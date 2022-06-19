@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@prisma/client": "^3.0.1",
+    "@stitches/react": "^1.2.8",
     "@trpc/client": "^9.25.3",
     "@trpc/next": "^9.25.3",
     "@trpc/react": "^9.25.3",
